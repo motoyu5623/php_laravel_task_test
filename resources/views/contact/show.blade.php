@@ -22,8 +22,8 @@
                     {{$contact->title}}
                     {{$contact->email}}
                     {{$contact->url}}
-                    {{$contact->gender}}
-                    {{$contact->age}}
+                    {{$gender}}
+                    {{$age}}
                     {{$contact->contact}}
 
                     <form method="GET" action="{{route('contact.edit', ['id'=> $contact->id])}}">

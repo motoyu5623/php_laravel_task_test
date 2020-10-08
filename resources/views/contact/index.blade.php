@@ -17,6 +17,11 @@
                       <button type="submit" class="btn btn-primary">新規登録</button>
                     </form>
 
+                    <form method="GET" action="{{ route('contact.index')}}" class="form-inline my-2 my-lg-0">
+                      <input type="search" class="form-control mr-sm-2" name="search" placeholder="検索..." aria-label="検索...">
+                      <button type="submit" class="btn btn-outline-success my-2 my-sm-0">検索</button>
+                    </form>
+
                     <table class="table">
                       <thead>
                         <th scope="col">ID</th>
@@ -37,6 +42,7 @@
                         @endforeach
                       </tbody>
                     </table>
+                    {{ $contacts->links() }}
                 </div>
             </div>
         </div>
